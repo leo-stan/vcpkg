@@ -7,6 +7,7 @@ vcpkg_from_github(
     PATCHES
         add-gcc-version-check.patch
         fix-check-sse.patch
+        fix-check-sse2.patch
         fix-numeric-literals-flag.patch
         pcl_config.patch
         pcl_utils.patch
@@ -70,6 +71,8 @@ vcpkg_cmake_configure(
         -DWITH_RSSDK=OFF
         -DWITH_RSSDK2=OFF
         -DWITH_OPENMP=OFF
+        -DPCL_ENABLE_SSE=OFF
+        -DPCL_ENABLE_AVX=OFF
         # FEATURES
         ${FEATURE_OPTIONS}
     MAYBE_UNUSED_VARIABLES
