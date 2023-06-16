@@ -1,0 +1,13 @@
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index 17020e162..86bd9f573 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -8,7 +8,7 @@ if(POLICY CMP0074)
+ endif()
+ 
+ # Set target C++ standard and required compiler features
+-set(CMAKE_CXX_STANDARD 14 CACHE STRING "The target C++ standard. PCL requires C++14 or higher.")
++set(CMAKE_CXX_STANDARD 17 CACHE STRING "The target C++ standard. PCL requires C++14 or higher.")
+ set(CMAKE_CXX_STANDARD_REQUIRED ON)
+ set(CMAKE_CXX_EXTENSIONS OFF)
+ set(PCL_CXX_COMPILE_FEATURES cxx_std_14)

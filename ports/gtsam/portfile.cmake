@@ -11,6 +11,7 @@ vcpkg_from_github(
 
 vcpkg_cmake_configure(
     SOURCE_PATH "${SOURCE_PATH}"
+    PREFER_NINJA
     OPTIONS
         -DGTSAM_BUILD_TESTS=OFF
         -DGTSAM_BUILD_EXAMPLES_ALWAYS=OFF
